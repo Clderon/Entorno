@@ -1,8 +1,244 @@
-<p>Find me in app/views/home/index.html.erb</p>
-<h1>Home#index</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INCUBA UNAS - Transformando el ecosistema emprendedor de la Amazonía</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <%= image_tag 'logo-incuba.png', alt: 'INCUBA UNAS Logo', class: 'logo' %>
+            <span class="logo-text">INCUBA <span class="green-text">UNAS</span></span>
+        </div>
+        <div class="nav-links">
+            <a href="#programas">Programas</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#portafolio">Portafolio</a>
+            <a href="#testimonios">Testimonios</a>
+            <a href="#equipo">Equipo</a>
+            <a href="#nosotros-2">Nosotros</a>
+        </div>
+        <button class="login-btn">
+            INICIAR SESIÓN <i class="fas fa-user-circle"></i>
+        </button>
+    </nav>
 
-<p>
-  <strong>¡Hola desde Docker y Rails!</strong>
-</p>
-<h1>¡Hola desde Docker y Rails! 🚀</h1>
-<p>Tu contenedor está funcionando correctamente 🐳.</p>
+    <!-- Background -->
+    <div class="background"></div>
+
+    <!-- Social Media Sidebar -->
+    <div class="social-sidebar">
+        <a href="#" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="content-hero">
+          <div class="content-left">
+              <h1 class="main-title">
+                  <span class="blue-text">INCUBA</span> <span class="green-text">UNAS</span>
+              </h1>
+              <p class="tagline">Transformando el ecosistema emprendedor de la Amazonía</p>
+              
+              <div class="buttons-container">
+                  <a href="#" class="btn btn-green">Programas</a>
+                  <a href="#" class="btn btn-green">Únete a nosotros</a>
+              </div>
+              
+              <div class="social-buttons">
+                  <a href="#" class="social-btn linkedin">
+                      <i class="fab fa-linkedin-in"></i> LinkedIn
+                  </a>
+                  <a href="#" class="social-btn facebook">
+                      <i class="fab fa-facebook-f"></i> Facebook
+                  </a>
+              </div>
+          </div>
+          
+          <div class="content-right">
+              <div class="figures-logo">
+                <%= image_tag 'logo.png', alt: 'INCUBA UNAS Figures Logo', class: 'figures-image' %>
+              </div>
+          </div>
+        </div>
+
+        <!-- Scroll to Top Button -->
+        <a href="#" class="scroll-top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    
+        <!-- Section programas Section -->
+        <section class="programas-section">
+            <div class="container">
+                <h2 class="section-title">Nuestros programas</h2>
+                
+                <p class="section-description">
+                    Incuba UNAS, nos dedicamos a potenciar a los <strong>emprendedores</strong> más prometedores y sus startups para que alcancen nuevos retos y 
+                    tengan éxito. Nos fundamentamos en el conocimiento <strong>tecnológico</strong> y <strong>empresarial</strong>, ofreciendo conexiones nacionales e internacionales y 
+                    oportunidades de inversión. Únete a la vibrante comunidad emprendedora y mejora tus posibilidades de crecimiento y éxito.
+                </p>
+                
+                <div class="programas-cards">
+                    <!-- Tarjeta 1: Talento Emprendedor -->
+                    <div class="programa-card">
+                        <div class="card-image">
+                            <%= image_tag 'talento-emprendedor.png', alt: 'Talento Emprendedor'%>
+                        </div>
+                        <h3 class="card-title">TALENTO EMPRENDEDOR UNAS emprende</h3>
+                        <p class="card-description-programas">
+                            Descubre el potencial de tu startup con nuestro programa de Startup UNI. Te equipamos para diseñar productos, generar habilidades empresariales y dominar tendencias tecnológicas, potencia tu crecimiento hacia el éxito empresarial.
+                        </p>
+                        <a href="#" class="card-button register-btn">
+                            Regístrate <i class="fas fa-arrow-circle-right"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Tarjeta 2: Impulso Emprendedor -->
+                    <div class="programa-card">
+                        <div class="card-image">
+                            <%= image_tag 'impulso-emprendedor.png', alt: 'Impulso Emprendedor'%>
+                        </div>
+                        <h3 class="card-title">IMPULSO EMPRENDEDOR</h3>
+                        <p class="card-description-programas">
+                            Bienvenido al futuro de la innovación tecnológica con Startup UNI. IMPULSO es el nuevo programa de aceleración diseñado para impulsar a emprendedores visionarios que quieren estar ahead los desafíos apremiantes.
+                        </p>
+                        <a href="#" class="card-button view-btn">
+                            Ver programa <i class="fas fa-arrow-circle-right"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Tarjeta 3: Programa de Incubación -->
+                    <div class="programa-card">
+                        <div class="card-image">
+                            <%= image_tag 'programa-incubacion', alt: 'Impulso Emprendedor'%>
+                        </div>
+                        <h3 class="card-title">PROGRAMA DE INCUBACIÓN</h3>
+                        <p class="card-description-programas">
+                            Únete al programa de incubación de Startup UNI y desbloquea un mundo de oportunidades. Nuestra plataforma te brinda mentoría personalizada, acceso a expertos y acceso a una red exclusiva de mentores, inversores y profesionales de la industria.
+                        </p>
+                        <a href="#" class="card-button view-btn">
+                            Ver programa <i class="fas fa-arrow-circle-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section eventos -->
+        <section class="eventos-section">
+          <div class="container">
+              <h2 class="section-title-events">Eventos Actuales</h2>
+              
+              <p class="section-description-events">
+                  En Incuba UNAS tiene eventos de emprendores en fechas a corto plazo que son únicos y un gran oportunidad en desempeñar y demostrar tu proyecto innovador el público en general.
+              </p>
+              
+              <div class="eventos-cards">
+                  <!-- Evento 1: FESTILIBRO 2024 -->
+                  <div class="evento-card">
+                      <div class="card-image">
+                          <%= image_tag 'evento-festilibro.png', alt: 'ESTILIBRO 2024'%>
+                      </div>
+                      <h3 class="card-title">FESTILIBRO 2024</h3>
+                      <p class="card-description">
+                          Un evento que celebra la lectura y la escritura, explorando el impacto de la informática en industrias como la alimentaria y los juegos digitales. Con presentaciones, talleres y charlas, Festilibro fomenta la lectura y el interés tecnológico en la comunidad.
+                      </p>
+                      <a href="#" class="card-button">
+                          Contactarse <i class="fas fa-check-circle"></i>
+                      </a>
+                      
+                      <div class="countdown-container">
+                          <p class="fecha-estimada">Fecha estimada: 18/07/2024</p>
+                          <div class="countdown">
+                              <div class="countdown-item">
+                                  <div class="countdown-value">00</div>
+                                  <div class="countdown-label">Días</div>
+                              </div>
+                              <div class="countdown-item">
+                                  <div class="countdown-value">00</div>
+                                  <div class="countdown-label">Horas</div>
+                              </div>
+                              <div class="countdown-item">
+                                  <div class="countdown-value">00</div>
+                                  <div class="countdown-label">Minutos</div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <!-- Evento 2: MERCAFERIA TECNOLÓGICO -->
+                  <div class="evento-card">
+                      <div class="card-image">
+                          <%= image_tag 'evento-mercaferia.png', alt: 'MERCAFERIA TECNOLÓGICO'%>
+                      </div>
+                      <h3 class="card-title">MERCAFERIA TECNOLÓGICO</h3>
+                      <p class="card-description">
+                          Un evento que fusiona tecnología y comercio, destacando innovaciones en diversos sectores. Con exposiciones, talleres y charlas, es una oportunidad para explorar cómo la tecnología transforma la industria y el comercio, y para conectar con profesionales y entusiastas.
+                      </p>
+                      <a href="#" class="card-button">
+                          Contactarse <i class="fas fa-check-circle"></i>
+                      </a>
+                      
+                      <div class="countdown-container">
+                          <p class="fecha-estimada">Fecha estimada: 28/07/2024</p>
+                          <div class="countdown">
+                              <div class="countdown-item">
+                                  <div class="countdown-value">3</div>
+                                  <div class="countdown-label">Días</div>
+                              </div>
+                              <div class="countdown-item">
+                                  <div class="countdown-value">15</div>
+                                  <div class="countdown-label">Horas</div>
+                              </div>
+                              <div class="countdown-item">
+                                  <div class="countdown-value">45</div>
+                                  <div class="countdown-label">Minutos</div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <!-- Evento 3: ALIMENTAFERIA INDUSTRIALES -->
+                  <div class="evento-card">
+                      <div class="card-image">
+                          <%= image_tag 'evento-alimentaferia.png', alt: 'ALIMENTAFERIA INDUSTRIALES'%>
+                      </div>
+                      <h3 class="card-title">ALIMENTAFERIA INDUSTRIALES</h3>
+                      <p class="card-description">
+                          Un evento dedicado a los pequeños emprendedores en la industria alimentaria. Con exposiciones, talleres y charlas, es una plataforma para mostrar innovaciones, aprender y conectar con otros profesionales del sector. Un espacio para impulsar el crecimiento y sostenibilidad en la industria alimentaria.
+                      </p>
+                      <a href="#" class="card-button">
+                          Contactarse <i class="fas fa-check-circle"></i>
+                      </a>
+                      
+                      <div class="countdown-container">
+                          <p class="fecha-estimada">Fecha estimada: 27/07/2024</p>
+                          <div class="countdown">
+                              <div class="countdown-item">
+                                  <div class="countdown-value">2</div>
+                                  <div class="countdown-label">Días</div>
+                              </div>
+                              <div class="countdown-item">
+                                  <div class="countdown-value">18</div>
+                                  <div class="countdown-label">Horas</div>
+                              </div>
+                              <div class="countdown-item">
+                                  <div class="countdown-value">20</div>
+                                  <div class="countdown-label">Minutos</div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </section>
+    </main>
+
+</body>
+</html>
