@@ -1,0 +1,27 @@
+# Ignore log files and temp files
+/log/*
+/tmp/*
+/storage/*
+/public/assets
+
+# Ignore SQLite3 database files
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Ignore generated secrets and credentials
+/config/master.key
+/config/credentials.yml.enc
+
+# Ignore system files from macOS
+.DS_Store
+
+# Ignore bundler config files
+/.bundle
+
+# Ignore node_modules
+/node_modules/
+
+# Ignore any sensitive environment files
+/.env
+/.env.local
+

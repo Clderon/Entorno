@@ -1,0 +1,44 @@
+version: "3.9"
+
+services:
+  web:
+    build: .
+    container_name: incuba-web
+    volumes:
+      - .:/rails
+    ports:
+      - "3100:3100"
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      RAILS_ENV: development
+      DATABASE_URL: "postgresql://cristian:cristian@db:5432/incuba_development"
+    networks:
+      - incuba-net
+
+  db:
+    image: postgres:15
+    container_name: incuba-db
+    environment:
+      POSTGRES_USER: cristian
+      POSTGRES_PASSWORD: cristian
+      POSTGRES_DB: incuba_development
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - incuba-net
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U cristian"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  pgdata:
+
+networks:
+  incuba-net:
+    driver: bridge
