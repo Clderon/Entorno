@@ -155,7 +155,7 @@
                       </a>
                       
                       <div class="countdown-container">
-                          <p class="fecha-estimada">Fecha estimada: 18/07/2024</p>
+                          <p class="fecha-estimada">Fecha estimada: 18/04/2025</p>
                           <div class="countdown">
                               <div class="countdown-item">
                                   <div class="countdown-value">00</div>
@@ -168,6 +168,10 @@
                               <div class="countdown-item">
                                   <div class="countdown-value">00</div>
                                   <div class="countdown-label">Minutos</div>
+                              </div>
+                              <div class="countdown-item">
+                                  <div class="countdown-value">00</div>
+                                  <div class="countdown-label">Segundos</div>
                               </div>
                           </div>
                       </div>
@@ -187,7 +191,7 @@
                       </a>
                       
                       <div class="countdown-container">
-                          <p class="fecha-estimada">Fecha estimada: 28/07/2024</p>
+                          <p class="fecha-estimada">Fecha estimada: 28/04/2025</p>
                           <div class="countdown">
                               <div class="countdown-item">
                                   <div class="countdown-value">3</div>
@@ -200,6 +204,10 @@
                               <div class="countdown-item">
                                   <div class="countdown-value">45</div>
                                   <div class="countdown-label">Minutos</div>
+                              </div>
+                              <div class="countdown-item">
+                                  <div class="countdown-value">45</div>
+                                  <div class="countdown-label">Segundos</div>
                               </div>
                           </div>
                       </div>
@@ -219,7 +227,7 @@
                       </a>
                       
                       <div class="countdown-container">
-                          <p class="fecha-estimada">Fecha estimada: 27/07/2024</p>
+                          <p class="fecha-estimada">Fecha estimada: 27/04/2025</p>
                           <div class="countdown">
                               <div class="countdown-item">
                                   <div class="countdown-value">2</div>
@@ -232,6 +240,10 @@
                               <div class="countdown-item">
                                   <div class="countdown-value">20</div>
                                   <div class="countdown-label">Minutos</div>
+                              </div>
+                              <div class="countdown-item">
+                                  <div class="countdown-value">20</div>
+                                  <div class="countdown-label">segundos</div>
                               </div>
                           </div>
                       </div>
@@ -416,8 +428,82 @@
             </div>
         </section>
 
-        
+        <section class="vision-section">
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <!-- Slide 1 -->
+                    <div class="carousel-slide">
+                        <div class="slide-content">
+                            <div class="slide-image">
+                                <%= image_tag 'nuestra-vision.png', alt: 'Equipo INCUBA UNAS' %>
+                            </div>
+                            <div class="slide-text">
+                                <h2 class="vision-title">NUESTRA VISIÓN</h2>
+                                <p class="vision-description">
+                                    Ser la incubadora líder en el desarrollo de emprendimientos, 
+                                    startups e innovación en la amazonía peruana, proyectándose como un 
+                                    referente en el ecosistema emprendedor de la región sudamericana.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 2 -->
+                    <div class="carousel-slide">
+                        <div class="slide-content">
+                            <div class="slide-image">
+                                <%= image_tag 'nuestra-vision.png', alt: 'Equipo INCUBA UNAS' %>
+                            </div>
+                            <div class="slide-text">
+                                <h2 class="vision-title">NUESTRA MISIÓN</h2>
+                                <p class="vision-description">
+                                    Impulsar el desarrollo de emprendimientos innovadores en la Amazonía, 
+                                    brindando herramientas, conocimientos y conexiones que permitan a los 
+                                    emprendedores transformar sus ideas en negocios sostenibles y exitosos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 3 -->
+                    <div class="carousel-slide">
+                        <div class="slide-content">
+                            <div class="slide-image">
+                                <%= image_tag 'nuestra-vision.png', alt: 'Equipo INCUBA UNAS' %>
+                            </div>
+                            <div class="slide-text">
+                                <h2 class="vision-title">NUESTROS VALORES</h2>
+                                <p class="vision-description">
+                                    Nos guiamos por la innovación, la ética, el trabajo en equipo y el 
+                                    compromiso con el desarrollo sostenible de la región amazónica. 
+                                    Creemos en el potencial transformador del emprendimiento como 
+                                    motor de cambio social y económico.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Controles de navegación -->
+                <button class="carousel-button prev-button">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-button next-button">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <!-- Indicadores -->
+                <div class="carousel-indicators">
+                    <span class="indicator active" data-index="0"></span>
+                    <span class="indicator" data-index="1"></span>
+                    <span class="indicator" data-index="2"></span>
+                </div>
+            </div>
+        </section>
 
+        
+        
+        <%= javascript_include_tag 'countdown', 'data-turbo-track': 'reload' %>
     </main>
 
 </body>
