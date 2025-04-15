@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INCUBA UNAS - Transformando el ecosistema emprendedor de la Amazonía</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <%= image_tag 'logo-incuba.png', alt: 'INCUBA UNAS Logo', class: 'logo' %>
+            <span class="logo-text">INCUBA <span class="green-text">UNAS</span></span>
+        </div>
+        <div class="nav-links">
+            <a href="#programas">Programas</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#portafolio">Portafolio</a>
+            <a href="#testimonios">Testimonios</a>
+            <a href="#equipo">Equipo</a>
+        </div>
+        <button class="login-btn">
+            iniciar sesión  <i class="fas fa-user-circle"></i>
+        </button>
+    </nav>
+
+    <!-- Social Media Sidebar -->
+    <div class="social-sidebar">
+        <a href="#" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <div class="content-hero">
+          <div class="content-left">
+              <h1 class="main-title">
+                  <span class="blue-text">INCUBA</span> <span class="green-text">UNAS</span>
+              </h1>
+              <p class="tagline">Transformando el ecosistema emprendedor de la Amazonía</p>
+              
+              <div class="buttons-container">
+                  <a href="#" class="btn btn-green">Programas</a>
+                  <a href="#" class="btn btn-green">Únete a nosotros</a>
+              </div>
+              
+              <div class="social-buttons">
+                  <a href="#" class="social-btn linkedin">
+                      <i class="fab fa-linkedin-in"></i> LinkedIn
+                  </a>
+                  <a href="#" class="social-btn facebook">
+                      <i class="fab fa-facebook-f"></i> Facebook
+                  </a>
+              </div>
+          </div>
+          
+          <div class="content-right">
+              <div class="figures-logo">
+                <%= image_tag 'logo.png', alt: 'INCUBA UNAS Figures Logo', class: 'figures-image' %>
+              </div>
+          </div>
+        </div>
+
+        <!-- Scroll to Top Button -->
+        <a href="#" class="scroll-top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    
+        <!-- Section programas Section -->
+        <section class="programas-section">
+            <div class="container">
+                <h2 class="section-title">Nuestros programas</h2>
+                
+                <p class="section-description">
+                    Incuba UNAS, nos dedicamos a potenciar a los <strong>emprendedores</strong> más prometedores y sus startups para que alcancen nuevos retos y 
+                    tengan éxito. Nos fundamentamos en el conocimiento <strong>tecnológico</strong> y <strong>empresarial</strong>, ofreciendo conexiones nacionales e internacionales y 
+                    oportunidades de inversión. Únete a la vibrante comunidad emprendedora y mejora tus posibilidades de crecimiento y éxito.
+                </p>
+                
+                <div class="programas-cards">
+                    <!-- Tarjeta 1: Talento Emprendedor -->
+                    <div class="programa-card">
+                        <div class="card-image">
+                            <%= image_tag 'talento-emprendedor.png', alt: 'Talento Emprendedor'%>
+                        </div>
+                        <h3 class="card-title">TALENTO EMPRENDEDOR UNAS emprende</h3>
+                        <p class="card-description-programas">
+                            Descubre el potencial de tu startup con nuestro programa de Startup UNI. Te equipamos para diseñar productos, generar habilidades empresariales y dominar tendencias tecnológicas, potencia tu crecimiento hacia el éxito empresarial.
+                        </p>
+                        <a href="#" class="card-button register-btn">
+                            Regístrate <i class="fas fa-arrow-circle-right"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Tarjeta 2: Impulso Emprendedor -->
+                    <div class="programa-card">
+                        <div class="card-image">
+                            <%= image_tag 'impulso-emprendedor.png', alt: 'Impulso Emprendedor'%>
+                        </div>
+                        <h3 class="card-title">IMPULSO EMPRENDEDOR</h3>
+                        <p class="card-description-programas">
+                            Bienvenido al futuro de la innovación tecnológica con Startup UNI. IMPULSO es el nuevo programa de aceleración diseñado para impulsar a emprendedores visionarios que quieren estar ahead los desafíos apremiantes.
+                        </p>
+                        <a href="#" class="card-button view-btn">
+                            Ver programa <i class="fas fa-arrow-circle-right"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Tarjeta 3: Programa de Incubación -->
+                    <div class="programa-card">
+                        <div class="card-image">
+                            <%= image_tag 'programa-incubacion', alt: 'Impulso Emprendedor'%>
+                        </div>
+                        <h3 class="card-title">PROGRAMA DE INCUBACIÓN</h3>
+                        <p class="card-description-programas">
+                            Únete al programa de incubación de Startup UNI y desbloquea un mundo de oportunidades. Nuestra plataforma te brinda mentoría personalizada, acceso a expertos y acceso a una red exclusiva de mentores, inversores y profesionales de la industria.
+                        </p>
+                        <a href="#" class="card-button view-btn">
+                            Ver programa <i class="fas fa-arrow-circle-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section eventos -->
+        <section class="eventos-section">
+          <div class="container">
+              <h2 class="section-title-events">Eventos Actuales</h2>
+              
+              <p class="section-description-events">
+                  En Incuba UNAS tiene eventos de emprendores en fechas a corto plazo que son únicos y un gran oportunidad en desempeñar y demostrar tu proyecto innovador el público en general.
+              </p>
+              
+              <div class="eventos-cards">
+                  <!-- Evento 1: FESTILIBRO 2024 -->
+                  <div class="evento-card">
+                      <div class="card-image">
+                          <%= image_tag 'evento-festilibro.png', alt: 'ESTILIBRO 2024'%>
+                      </div>
+                      <h3 class="card-title">FESTILIBRO 2024</h3>
+                      <p class="card-description">
+                          Un evento que celebra la lectura y la escritura, explorando el impacto de la informática en industrias como la alimentaria y los juegos digitales. Con presentaciones, talleres y charlas, Festilibro fomenta la lectura y el interés tecnológico en la comunidad.
+                      </p>
+                      <a href="#" class="card-button">
+                          Contactarse <i class="fas fa-check-circle"></i>
+                      </a>
+                      
+                      <div class="countdown-container">
+                          <p class="fecha-estimada">Fecha estimada: 18/04/2025</p>
+                          <div class="countdown">
+                              <div class="countdown-item">
+                                  <div class="countdown-value">00</div>
+                                  <div class="countdown-label">Días</div>
+                              </div>
+                              <div class="countdown-item">
+                                  <div class="countdown-value">00</div>
+                                  <div class="countdown-label">Horas</div>
+                              </div>
+                              <div class="countdown-item">
+                                  <div class="countdown-value">00</div>
+                                  <div class="countdown-label">Minutos</div>
+                              </div>
+                              <div class="countdown-item">
+                                  <div class="countdown-value">00</div>
+                                  <div class="countdown-label">Segundos</div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <!-- Evento 2: MERCAFERIA TECNOLÓGICO -->
+                  <div class="evento-card">
+                      <div class="card-image">
+                          <%= image_tag 'evento-mercaferia.png', alt: 'MERCAFERIA TECNOLÓGICO'%>
+                      </div>
+                      <h3 class="card-title">MERCAFERIA TECNOLÓGICO</h3>
+                      <p class="card-description">
+                          Un evento que fusiona tecnología y comercio, destacando innovaciones en diversos sectores. Con exposiciones, talleres y charlas, es una oportunidad para explorar cómo la tecnología transforma la industria y el comercio, y para conectar con profesionales y entusiastas.
+                      </p>
+                      <a href="#" class="card-button">
+                          Contactarse <i class="fas fa-check-circle"></i>
+                      </a>
+                      
+                      <div class="countdown-container">
+                          <p class="fecha-estimada">Fecha estimada: 28/04/2025</p>
+                          <div class="countdown">
+                              <div class="countdown-item">
+                                  <div class="countdown-value">3</div>
+                                  <div class="countdown-label">Días</div>
+                              </div>
+                              <div class="countdown-item">
+                                  <div class="countdown-value">15</div>
+                                  <div class="countdown-label">Horas</div>
+                              </div>
+                              <div class="countdown-item">
+                                  <div class="countdown-value">45</div>
+                                  <div class="countdown-label">Minutos</div>
+                              </div>
+                              <div class="countdown-item">
+                                  <div class="countdown-value">45</div>
+                                  <div class="countdown-label">Segundos</div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <!-- Evento 3: ALIMENTAFERIA INDUSTRIALES -->
+                  <div class="evento-card">
+                      <div class="card-image">
+                          <%= image_tag 'evento-alimentaferia.png', alt: 'ALIMENTAFERIA INDUSTRIALES'%>
+                      </div>
+                      <h3 class="card-title">ALIMENTAFERIA INDUSTRIALES</h3>
+                      <p class="card-description">
+                          Un evento dedicado a los pequeños emprendedores en la industria alimentaria. Con exposiciones, talleres y charlas, es una plataforma para mostrar innovaciones, aprender y conectar con otros profesionales del sector. Un espacio para impulsar el crecimiento y sostenibilidad en la industria alimentaria.
+                      </p>
+                      <a href="#" class="card-button">
+                          Contactarse <i class="fas fa-check-circle"></i>
+                      </a>
+                      
+                      <div class="countdown-container">
+                          <p class="fecha-estimada">Fecha estimada: 27/04/2025</p>
+                          <div class="countdown">
+                              <div class="countdown-item">
+                                  <div class="countdown-value">2</div>
+                                  <div class="countdown-label">Días</div>
+                              </div>
+                              <div class="countdown-item">
+                                  <div class="countdown-value">18</div>
+                                  <div class="countdown-label">Horas</div>
+                              </div>
+                              <div class="countdown-item">
+                                  <div class="countdown-value">20</div>
+                                  <div class="countdown-label">Minutos</div>
+                              </div>
+                              <div class="countdown-item">
+                                  <div class="countdown-value">20</div>
+                                  <div class="countdown-label">segundos</div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </section>
+
+        <!-- Section hero Image -->
+        <section class="hero-image-section">
+            <div class="hero-image">
+                <%= image_tag 'hero-image.png', alt: 'Hero Image' %>
+            </div>
+        </section>
+
+        <!-- Section recurso -->
+        <section class="recursos-section">
+            <div class="container-recursos">
+                <h2 class="section-title-recursos">Recursos Académicos</h2>
+                
+                <p class="section-description-recursos">
+                    En Incuba UNAS también brinda recursos Académicos a los estudiantes que piensan emprender relacionando la carrera profesional en el trabajo laboral.
+                </p>
+                
+                <div class="recursos-grid">
+                    <!-- Recurso 1 -->
+                    <div class="recurso-card">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <%= image_tag 'recurso-01.png', alt: 'Emprendimiento, Mercado Laboral e Investigación Universitaria' %>
+                            </div>
+                            <div class="card-info">
+                                <span class="card-type">Presentación</span>
+                                <h3 class="card-title">Emprendimiento, Mercado Laboral e Investigación Universitaria</h3>
+                                <p class="card-author">Luis Martínez</p>
+                                <div class="card-stats">
+                                    <span><i class="fas fa-eye"></i> 137 vistas</span>
+                                    <span><i class="fas fa-download"></i> 43 descargas</span>
+                                </div>
+                                <a href="#" class="btn-ver">Ver</a>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-descargar">Descargar</a>
+                    </div>
+                    
+                    <!-- Recurso 2 -->
+                    <div class="recurso-card">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <%= image_tag 'recurso-02.png', alt: 'Actividad de seguimiento para fortalecer las habilidades saber pro' %>
+                            </div>
+                            <div class="card-info">
+                                <span class="card-type">Documento</span>
+                                <h3 class="card-title">ACTIVIDAD DE SEGUIMIENTO PARA FORTALECER LAS HABILIDADES SABER PRO...</h3>
+                                <p class="card-author">Elizabeth Cortina Lugo</p>
+                                <div class="card-stats">
+                                    <span><i class="fas fa-eye"></i> 92 vistas</span>
+                                    <span><i class="fas fa-download"></i> 38 descargas</span>
+                                </div>
+                                <a href="#" class="btn-ver">Ver</a>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-descargar">Descargar</a>
+                    </div>
+                    
+                    <!-- Recurso 3 -->
+                    <div class="recurso-card">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <%= image_tag 'recurso-03.png', alt: 'Emprendimiento social desde la vida universitaria' %>
+                            </div>
+                            <div class="card-info">
+                                <span class="card-type">Documento</span>
+                                <h3 class="card-title">Emprendimiento social desde la vida universitaria</h3>
+                                <p class="card-author">HERBOLARIO</p>
+                                <div class="card-stats">
+                                    <span><i class="fas fa-eye"></i> 203 vistas</span>
+                                    <span><i class="fas fa-download"></i> 74 descargas</span>
+                                </div>
+                                <a href="#" class="btn-ver">Ver</a>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-descargar">Descargar</a>
+                    </div>
+                    
+                    <!-- Recurso 4 -->
+                    <div class="recurso-card">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <%= image_tag 'recurso-04.png', alt: 'Liderazgo Universitario orientado al Emprendimiento' %>
+                            </div>
+                            <div class="card-info">
+                                <span class="card-type">Presentación</span>
+                                <h3 class="card-title">Liderazgo Universitario orientado al Emprendimiento</h3>
+                                <p class="card-author">Juan Pérez Rodríguez</p>
+                                <div class="card-stats">
+                                    <span><i class="fas fa-eye"></i> 156 vistas</span>
+                                    <span><i class="fas fa-download"></i> 52 descargas</span>
+                                </div>
+                                <a href="#" class="btn-ver">Ver</a>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-descargar">Descargar</a>
+                    </div>
+                    
+                    <!-- Recurso 5 -->
+                    <div class="recurso-card">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <%= image_tag 'recurso-05.png', alt: 'ACTIVIDAD SABER PRO, 04 DE MAYO, 2020' %>
+                            </div>
+                            <div class="card-info">
+                                <span class="card-type">Documento</span>
+                                <h3 class="card-title">ACTIVIDAD SABER PRO, 04 DE MAYO, 2020</h3>
+                                <p class="card-author">JorgePro67</p>
+                                <div class="card-stats">
+                                    <span><i class="fas fa-eye"></i> 118 vistas</span>
+                                    <span><i class="fas fa-download"></i> 45 descargas</span>
+                                </div>
+                                <a href="#" class="btn-ver">Ver</a>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-descargar">Descargar</a>
+                    </div>
+                    
+                    <!-- Recurso 6 -->
+                    <div class="recurso-card">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <%= image_tag 'recurso-06.png', alt: 'Universitarios y empleo' %>
+                            </div>
+                            <div class="card-info">
+                                <span class="card-type">Presentación</span>
+                                <h3 class="card-title">Universitarios y empleo</h3>
+                                <p class="card-author">María González</p>
+                                <div class="card-stats">
+                                    <span><i class="fas fa-eye"></i> 184 vistas</span>
+                                    <span><i class="fas fa-download"></i> 63 descargas</span>
+                                </div>
+                                <a href="#" class="btn-ver">Ver</a>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-descargar">Descargar</a>
+                    </div>
+                </div>
+                
+                <div class="explorar-container">
+                    <a href="#" class="btn-explorar">Explorar</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section testimonios -->
+        <section class="sobre-nosotros-section">
+            <div class="container">
+                <h2 class="section-title">Sobre Nosotros</h2>
+                
+                <p class="section-description">
+                    Somos una incubadora de negocios de la prestigiosa <strong>Universidad Nacional Agraria de la Selva</strong> en Perú, reconocida y 
+                    acreditada por Proinnovate. Somos más que una incubadora; somos el epicentro de la transformación 
+                    empresarial y el motor impulsor de la creatividad y el éxito.
+                </p>
+                
+                <div class="stats-container">
+                    <!-- Estadísticas Amazonía Peruana -->
+                    <div class="stats-box">
+                        <h3 class="stats-title">En la amazonía peruana</h3>
+                        <p class="stats-text">
+                            8% de la población son emprendedores 8 de cada 10 emprendimientos mueren a los 6 meses por falta de soporte
+                            Solo 1 de cada 10 emprendedores logra escalar (en 5 años) Zona de impacto: 3.7M de personas
+                        </p>
+                    </div>
+                    
+                    <!-- Estadísticas Amazonía Latinoamericana -->
+                    <div class="stats-box">
+                        <h3 class="stats-title">En la amazonía Lationamericana</h3>
+                        <p class="stats-text">
+                            14% población son emprendedores Alto nivel de pobreza Zona de impacto:6.8M de personas
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="vision-section">
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <!-- Slide 1 -->
+                    <div class="carousel-slide">
+                        <div class="slide-content">
+                            <div class="slide-image">
+                                <%= image_tag 'nuestra-vision.png', alt: 'Equipo INCUBA UNAS' %>
+                            </div>
+                            <div class="slide-text">
+                                <h2 class="vision-title">NUESTRA VISIÓN</h2>
+                                <p class="vision-description">
+                                    Ser la incubadora líder en el desarrollo de emprendimientos, 
+                                    startups e innovación en la amazonía peruana, proyectándose como un 
+                                    referente en el ecosistema emprendedor de la región sudamericana.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 2 -->
+                    <div class="carousel-slide">
+                        <div class="slide-content">
+                            <div class="slide-image">
+                                <%= image_tag 'nuestra-vision.png', alt: 'Equipo INCUBA UNAS' %>
+                            </div>
+                            <div class="slide-text">
+                                <h2 class="vision-title">NUESTRA MISIÓN</h2>
+                                <p class="vision-description">
+                                    Impulsar el desarrollo de emprendimientos innovadores en la Amazonía, 
+                                    brindando herramientas, conocimientos y conexiones que permitan a los 
+                                    emprendedores transformar sus ideas en negocios sostenibles y exitosos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 3 -->
+                    <div class="carousel-slide">
+                        <div class="slide-content">
+                            <div class="slide-image">
+                                <%= image_tag 'nuestra-vision.png', alt: 'Equipo INCUBA UNAS' %>
+                            </div>
+                            <div class="slide-text">
+                                <h2 class="vision-title">NUESTROS VALORES</h2>
+                                <p class="vision-description">
+                                    Nos guiamos por la innovación, la ética, el trabajo en equipo y el 
+                                    compromiso con el desarrollo sostenible de la región amazónica. 
+                                    Creemos en el potencial transformador del emprendimiento como 
+                                    motor de cambio social y económico.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Controles de navegación -->
+                <button class="carousel-button prev-button">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-button next-button">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <!-- Indicadores -->
+                <div class="carousel-indicators">
+                    <span class="indicator active" data-index="0"></span>
+                    <span class="indicator" data-index="1"></span>
+                    <span class="indicator" data-index="2"></span>
+                </div>
+            </div>
+        </section>
+
+        
+        
+        <%= javascript_include_tag 'countdown', 'data-turbo-track': 'reload' %>
+    </main>
+
+</body>
+</html>

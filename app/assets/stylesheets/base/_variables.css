@@ -1,0 +1,18 @@
+/* root colors */
+:root {
+  --color-primary: #6366f1;
+  --color-secondary: #f3f4f6;
+  --color-text: #290505;
+  --color-text-light: #6b7280;
+  --color-background: #ffffff;
+  --color-accent-1: #a5b4fc;
+  --color-accent-2: #8bc34a;
+  --color-accent-3: #e9d5ff;
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 16px;
+  --border-radius-xl: 24px;
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}

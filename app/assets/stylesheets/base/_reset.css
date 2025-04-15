@@ -1,0 +1,23 @@
+/* Reset simple */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Opcional: quitar estilos por defecto de enlaces, listas, etc. */
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+  animation: fadeIn 1s ease forwards;
+}
